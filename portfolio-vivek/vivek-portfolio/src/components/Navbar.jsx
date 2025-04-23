@@ -34,6 +34,18 @@ function Navbar() {
               Home
             </Link>
           </li>
+          {/* My Resume external link */}
+          <li className="nav-item">
+            <a
+              href="https://drive.google.com/file/d/1Boo9f1agf8s8AIt9E2id3qle0tOxAX7b/view?usp=sharing"
+              className="nav-links"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={closeMenu}
+            >
+              My Resume
+            </a>
+          </li>
           <li className="nav-item">
             <Link to="/about" className="nav-links" onClick={closeMenu}>
               About
