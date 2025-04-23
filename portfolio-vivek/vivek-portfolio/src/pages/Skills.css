@@ -1,0 +1,271 @@
+.skills-section {
+    background: linear-gradient(135deg, #e0fbfc 70%, #98c1d9 100%);
+    border-radius: 14px;
+    padding: 2.5rem 2rem;
+    margin: 2.5rem auto;
+    max-width: 950px;
+    box-shadow: 0 2px 18px rgba(61, 90, 128, 0.11);
+    text-align: center;
+  }
+  
+  h2, h3 {
+    color: #20716a;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
+  }
+  
+  h2:after {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #20716a, transparent);
+    bottom: -10px;
+    left: 20%;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #3d5a80;
+  }
+  
+  /* Technical Skills Bar Graph */
+  .skills-graph {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin: 2rem auto;
+    max-width: 700px;
+  }
+  
+  .skill-bar-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .skill-name {
+    width: 120px;
+    text-align: right;
+    padding-right: 1rem;
+    font-weight: 500;
+    color: #293241;
+  }
+  
+  .skill-bar-wrapper {
+    flex: 1;
+    background-color: #f6fcff;
+    height: 28px;
+    border-radius: 20px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .skill-bar {
+    height: 100%;
+    border-radius: 20px;
+    transition: width 0.5s ease, background-color 0.3s ease, transform 0.2s;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .skill-bar.hovered {
+    transform: scaleY(1.1);
+    box-shadow: 0 0 15px rgba(32, 113, 106, 0.6);
+  }
+  
+  .proficiency-label {
+    color: white;
+    font-weight: bold;
+    padding-right: 10px;
+    letter-spacing: 1px;
+    animation: fadeIn 0.3s ease;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  /* Interpersonal Skills with Background Images */
+  .interpersonal-skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+  
+  .interpersonal-skill {
+    width: 250px;
+    height: 180px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+  }
+  
+  .interpersonal-skill:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  .skill-bg {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  /* Fallback gradients if images aren't available */
+  .interpersonal-skill:nth-child(1) .skill-bg {
+    background: linear-gradient(45deg, #20716a, #a8edea);
+  }
+  
+  .interpersonal-skill:nth-child(2) .skill-bg {
+    background: linear-gradient(45deg, #3d5a80, #98c1d9);
+  }
+  
+  .interpersonal-skill:nth-child(3) .skill-bg {
+    background: linear-gradient(45deg, #ee6c4d, #f9c784);
+  }
+  
+  .skill-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: background 0.3s ease;
+    padding: 1rem;
+  }
+  
+  .interpersonal-skill:hover .skill-overlay {
+    background: rgba(32, 113, 106, 0.7);
+  }
+  
+  .skill-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .skill-overlay h4 {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+  }
+  
+  .skill-overlay p {
+    font-size: 0.9rem;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .interpersonal-skill:hover .skill-overlay p {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Certification Links */
+  .certification-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1.5rem auto;
+  }
+  
+  .certificate-link {
+    background: #f6fcff;
+    border-radius: 20px;
+    padding: 0.6rem 1.3rem;
+    color: #293241;
+    font-weight: 500;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(61, 90, 128, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+  }
+  
+  .certificate-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(61, 90, 128, 0.15);
+    background-color: #a8edea;
+    color: #20716a;
+  }
+  
+  /* Other Lists Styling */
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    list-style: none;
+    padding-left: 0;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .skills-list li {
+    background: #f6fcff;
+    border-radius: 20px;
+    padding: 0.6rem 1.3rem;
+    color: #293241;
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(61, 90, 128, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .skills-list li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(61, 90, 128, 0.15);
+    background: #e0fbfc;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .skill-name {
+      width: 100px;
+      font-size: 0.9rem;
+    }
+    
+    .interpersonal-skill {
+      width: 220px;
+      height: 150px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .skill-name {
+      width: 80px;
+      font-size: 0.8rem;
+    }
+    
+    .interpersonal-skills {
+      gap: 1rem;
+    }
+    
+    .interpersonal-skill {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+  
