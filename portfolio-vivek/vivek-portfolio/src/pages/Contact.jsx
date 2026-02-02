@@ -65,7 +65,7 @@ function Contact() {
           <div>
             <strong>LinkedIn:</strong>{" "}
             <a
-              href="https://www.linkedin.com/in/vivek-singh-b7960a219/"
+              href="https://www.linkedin.com/in/vivek-s-b7960a219/"
               target="_blank"
               rel="noopener noreferrer"
             >
