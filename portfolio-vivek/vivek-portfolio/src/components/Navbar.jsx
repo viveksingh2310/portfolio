@@ -37,7 +37,7 @@ function Navbar() {
           {/* My Resume external link */}
           <li className="nav-item">
             <a
-              href="https://drive.google.com/file/d/1Boo9f1agf8s8AIt9E2id3qle0tOxAX7b/view?usp=sharing"
+              href="https://drive.google.com/file/d/1TDrGcsAzBTxKzjh42-UZ2jtyI-iYSxAu/view?usp=sharing"
               className="nav-links"
               target="_blank"
               rel="noopener noreferrer"
